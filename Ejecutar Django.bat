@@ -1,8 +1,4 @@
 @echo off
-echo Activando entorno virtual...
-call venv\Scripts\activate
-
-echo Iniciando servidor Django...
-python manage.py runserver
-
+echo Iniciando AJM-WEB...
+venv\Scripts\python manage.py runserver
 pause
