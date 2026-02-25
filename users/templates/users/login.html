@@ -85,7 +85,10 @@
 <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400 group-focus-within:text-primary transition-colors">
 <span class="material-symbols-outlined">lock</span>
 </span>
-<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-[#1c3a2f] text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all font-normal" placeholder="••••••••" required="" type="password"/>
+<input id="password" class="w-full pl-10 pr-12 py-3 rounded-lg border border-slate-200 dark:border-slate-700 bg-background-light dark:bg-[#1c3a2f] text-slate-900 dark:text-white placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all font-normal" placeholder="••••••••" required="" type="password"/>
+<button id="togglePassword" type="button" aria-label="Mostrar contraseña" class="absolute inset-y-0 right-0 pr-3 flex items-center text-slate-400 hover:text-primary transition-colors">
+<span id="togglePasswordIcon" class="material-symbols-outlined">visibility</span>
+</button>
 </div>
 </label>
 <div class="flex items-center gap-2 mt-1">
@@ -107,4 +110,16 @@
 </div>
 </main>
 {% include 'footer.html' %}
+<script>
+    const passwordInput = document.getElementById('password');
+    const togglePasswordButton = document.getElementById('togglePassword');
+    const togglePasswordIcon = document.getElementById('togglePasswordIcon');
+
+    togglePasswordButton.addEventListener('click', () => {
+        const isPassword = passwordInput.type === 'password';
+        passwordInput.type = isPassword ? 'text' : 'password';
+        togglePasswordIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
+        togglePasswordButton.setAttribute('aria-label', isPassword ? 'Ocultar contraseña' : 'Mostrar contraseña');
+    });
+</script>
 </body></html>
