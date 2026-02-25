@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Catálogo de Soluciones Digitales AJM AgroTech</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#11d473",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#102219",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2c24",
+                        "text-main-light": "#111814",
+                        "text-main-dark": "#e0e6e3",
+                        "text-sec-light": "#618975",
+                        "text-sec-dark": "#8fa69a",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex flex-col font-display text-text-main-light dark:text-text-main-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+{% include 'navbar.html' %}
+<main class="flex-1 flex justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl w-full flex flex-col gap-10">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-6 border-b border-slate-200 dark:border-slate-800 pb-10">
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-tight">
+                        Catálogo de Soluciones <span class="text-primary">Digitales</span>
+</h1>
+<p class="text-text-sec-light dark:text-text-sec-dark text-lg font-normal leading-relaxed max-w-xl">
+                        Explore nuestras soluciones de software y hardware integrado para optimizar el monitoreo agrícola y simplificar el control documental.
+                    </p>
+</div>
+<div class="w-full md:w-auto md:min-w-[400px]">
+<label class="flex flex-col w-full">
+<div class="relative flex w-full items-center rounded-xl bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 shadow-sm focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all">
+<div class="absolute left-4 text-text-sec-light dark:text-text-sec-dark flex items-center justify-center">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="w-full h-12 bg-transparent pl-12 pr-4 rounded-xl border-none text-text-main-light dark:text-text-main-dark placeholder:text-text-sec-light dark:placeholder:text-text-sec-dark focus:ring-0 focus:outline-none" placeholder="Buscar app, plataforma o sensor..." value=""/>
+</div>
+</label>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-primary text-background-dark px-6 shadow-md shadow-primary/20 transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+<p class="text-sm font-bold">Todo</p>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-6 hover:border-primary hover:text-primary transition-colors text-text-sec-light dark:text-text-sec-dark">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+<p class="text-sm font-medium">Aplicaciones</p>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-6 hover:border-primary hover:text-primary transition-colors text-text-sec-light dark:text-text-sec-dark">
+<span class="material-symbols-outlined text-[20px]">cloud</span>
+<p class="text-sm font-medium">Web y Nube</p>
+</button>
+<button class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 px-6 hover:border-primary hover:text-primary transition-colors text-text-sec-light dark:text-text-sec-dark">
+<span class="material-symbols-outlined text-[20px]">sensors</span>
+<p class="text-sm font-medium">Sensores IoT</p>
+</button>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold leading-tight">Software y Plataformas</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Interfaz de App Móvil en campo agrícola" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtfjEK8mR8l3Hm9XNV3U-3r5_IP-8gvAtR41r5YC1FJi7bQLGUJhzRgeQbz6INRCB2jIyeGcADPzjQGwrC-HARaiI7TDKlkvLMff-8Z9I2Ma7GgN5cxGvEd4d0TCAyHYT7VHMiLFLGVkY-FpPqZuYTqGQsMcNGYYPGz8dWek58pNHnjLRqGTbZS7QTHlitE1OVR16MgPe07NRU6bkdRfMEPpDHib3aLDXghMxkc85eUEyzIcqd7UPIHCnB2AvP8lXd0E3khWqGZbFv"/>
+<div class="absolute top-3 right-3 bg-white/90 dark:bg-black/80 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-primary border border-primary/20">
+                                Popular
+                            </div>
+</div>
+<div class="flex flex-col p-6 gap-3 flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark">App Móvil de Campo</h3>
+<span class="material-symbols-outlined text-text-sec-light dark:text-text-sec-dark">smartphone</span>
+</div>
+<p class="text-text-sec-light dark:text-text-sec-dark text-sm leading-relaxed flex-1">
+                                Lleva el control a terreno. Registra datos offline, consulta sensores en tiempo real y recibe alertas críticas directamente en tu smartphone.
+                            </p>
+<div class="flex gap-2 mt-2">
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">iOS &amp; Android</span>
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">Modo Offline</span>
+</div>
+<div class="flex gap-3 mt-4">
+<button class="flex-1 h-10 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold shadow transition-colors">
+                                    Ver Demo
+                                </button>
+<button class="flex-1 h-10 rounded-lg border border-slate-200 dark:border-slate-700 text-text-main-light dark:text-text-main-dark text-sm font-bold hover:bg-background-light dark:hover:bg-slate-800 transition-colors">
+                                    Especificaciones
+                                </button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Dashboard de administración web con gráficos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2vYetlQ2USPEZWQj_6SEunVckHTZ8VFD0QRUVzV4idXLZovnF4KoahYS9xYE4oOKsrKe-OKHw_w5Xp3qNgb-gdUO14VcZ8nwBowUOtiaUv-22O5ZbJLaq0sJXV-ystM2Q5GqwNEOftRDNLBBtlik7xhQamWTWAKXsWI8pWR81w5ER0G926MBEi9Px83rZw5lyJrTCXoDnpPLGjBgqw07wG5-JQFRgdTaXm0WW_iljr6J17vIlITDo-SkH5rYfUHSexIxicGnCxmFD"/>
+</div>
+<div class="flex flex-col p-6 gap-3 flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark">Plataforma Web Admin</h3>
+<span class="material-symbols-outlined text-text-sec-light dark:text-text-sec-dark">desktop_windows</span>
+</div>
+<p class="text-text-sec-light dark:text-text-sec-dark text-sm leading-relaxed flex-1">
+                                Panel centralizado para la gestión de cultivos. Analítica avanzada, mapas de calor y configuración remota de todos tus dispositivos.
+                            </p>
+<div class="flex gap-2 mt-2">
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">SaaS</span>
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">Multi-usuario</span>
+</div>
+<div class="flex gap-3 mt-4">
+<button class="flex-1 h-10 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold shadow transition-colors">
+                                    Ver Demo
+                                </button>
+<button class="flex-1 h-10 rounded-lg border border-slate-200 dark:border-slate-700 text-text-main-light dark:text-text-main-dark text-sm font-bold hover:bg-background-light dark:hover:bg-slate-800 transition-colors">
+                                    Especificaciones
+                                </button>
+</div>
+</div>
+</div>
+<div class="group flex flex-col bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="relative w-full aspect-[4/3] overflow-hidden bg-slate-100 dark:bg-slate-900">
+<img alt="Gestión documental digital y segura" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdFnrLuT7ptWrA4x5vYtXdydSDn9DAcp0N6JrH4XLc0rOXCZbGCKg-wSMZI8Os1tMcT5VVntFbc7jR3aJYnUrLH57TRhgVprJU0xUBXcgpBLGyNtxG4nakvC3Xo6Ws0gITyPuNd4P1JYpX86M3uCzGhYtxX9eCIlrYMNUkGXjTWNZgU8FzREvZdyeT1SrIoxXYlGxQD9hmvEAp4Fvp6DmK6IMXJod6Wc4akBOBCk8PJuOsfpwm3YodZs51pi1gL9C-u3WSrNSckh4p"/>
+</div>
+<div class="flex flex-col p-6 gap-3 flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-text-main-light dark:text-text-main-dark">Control Documental</h3>
+<span class="material-symbols-outlined text-text-sec-light dark:text-text-sec-dark">folder_managed</span>
+</div>
+<p class="text-text-sec-light dark:text-text-sec-dark text-sm leading-relaxed flex-1">
+                                Digitaliza y organiza certificaciones, bitácoras de riego y cumplimiento normativo. Auditorías simplificadas en la nube.
+                            </p>
+<div class="flex gap-2 mt-2">
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">ISO/GlobalGAP</span>
+<span class="px-2 py-1 rounded-md bg-background-light dark:bg-background-dark text-xs font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">Seguro</span>
+</div>
+<div class="flex gap-3 mt-4">
+<button class="flex-1 h-10 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold shadow transition-colors">
+                                    Ver Demo
+                                </button>
+<button class="flex-1 h-10 rounded-lg border border-slate-200 dark:border-slate-700 text-text-main-light dark:text-text-main-dark text-sm font-bold hover:bg-background-light dark:hover:bg-slate-800 transition-colors">
+                                    Especificaciones
+                                </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-6 pt-8">
+<div class="flex items-center justify-between">
+<h2 class="text-2xl font-bold leading-tight">Hardware Integrado</h2>
+<a class="text-primary text-sm font-bold flex items-center hover:underline" href="#">
+                        Ver Catálogo Completo <span class="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 gap-6">
+<div class="group relative flex flex-col md:flex-row bg-surface-light dark:bg-surface-dark rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:shadow-xl hover:border-primary/50 transition-all duration-300">
+<div class="md:w-1/3 w-full aspect-video md:aspect-auto relative bg-slate-100 dark:bg-slate-900">
+<img alt="Sensor físico de suelo conectado a API" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPRRYSdtbcDzKd1FjXI5F5vRSz0B_JWAZlClkLjZ3KFkWh4azJbOKSEFxMbV6NAEgxAXkuoLZfDXfcrssantL7XQ2pd6tPkxu5zIkjxl3sGhoCAkSplPDyT_gQJTOFPE97vDfSVeYq30XvXpwiitWMDS4ZxAUd6Abfq3iPZd9x5egXmCtJNyrolzx7KnOd_FDrPON5Q3BAPRkNcht99qmqXAc5K2V32vRIE0f03j2Al20-lyR5yFv5qZvKINyxSG-WeK3ffzoo_Sy3"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6 md:hidden">
+<span class="text-white font-bold text-lg">Hardware Conectado</span>
+</div>
+</div>
+<div class="md:w-2/3 w-full p-6 md:p-8 flex flex-col justify-center gap-4">
+<div class="flex items-center gap-3 mb-1">
+<span class="p-2 rounded-lg bg-primary/10 text-primary">
+<span class="material-symbols-outlined">api</span>
+</span>
+<h3 class="text-2xl font-bold text-text-main-light dark:text-text-main-dark">Sensores de Suelo con Integración API</h3>
+</div>
+<p class="text-text-sec-light dark:text-text-sec-dark text-base leading-relaxed">
+                            Nuestra nueva generación de sensores no solo mide humedad y temperatura, sino que se conecta directamente a nuestra API abierta. Ideales para desarrolladores o para integrar con sistemas ERP existentes. Alimentan en tiempo real la Plataforma Web y la App Móvil.
+                        </p>
+<div class="flex flex-wrap gap-2 mb-2">
+<span class="px-3 py-1 rounded-full bg-background-light dark:bg-background-dark text-sm font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">LoRaWAN</span>
+<span class="px-3 py-1 rounded-full bg-background-light dark:bg-background-dark text-sm font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">REST API</span>
+<span class="px-3 py-1 rounded-full bg-background-light dark:bg-background-dark text-sm font-medium text-text-sec-light dark:text-text-sec-dark border border-slate-200 dark:border-slate-700">Plug &amp; Play</span>
+</div>
+<div class="flex gap-4 pt-2 w-full sm:w-auto">
+<button class="flex-1 sm:flex-none px-6 h-12 rounded-lg bg-primary hover:bg-primary/90 text-background-dark text-sm font-bold shadow transition-colors flex items-center justify-center gap-2">
+                                Ver Demo API
+</button>
+<button class="flex-1 sm:flex-none px-6 h-12 rounded-lg border border-slate-200 dark:border-slate-700 text-text-main-light dark:text-text-main-dark text-sm font-bold hover:bg-background-light dark:hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                                Especificaciones Técnicas
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 border-t border-slate-200 dark:border-slate-800 bg-surface-light dark:bg-surface-dark py-10 px-4">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<div class="flex items-center gap-3">
+<div class="size-6 text-primary">
+<svg class="w-full h-full" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<span class="text-sm font-semibold text-text-sec-light dark:text-text-sec-dark">© 2023 AJM AgroTech</span>
+</div>
+<div class="flex gap-6">
+<a class="text-text-sec-light dark:text-text-sec-dark text-sm hover:text-primary" href="#">Política de Privacidad</a>
+<a class="text-text-sec-light dark:text-text-sec-dark text-sm hover:text-primary" href="#">Términos de Servicio</a>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
