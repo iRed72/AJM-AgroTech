@@ -9,32 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="{% static 'css/users/login.css' %}"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#11d473",
-                        "primary-dark": "#0ea65a",
-                        "secondary": "#1B5E20",
-                        "secondary-dark": "#0D3312",
-                        "background-light": "#f6f8f7",
-                        "background-dark": "#102219",
-                        "surface-light": "#ffffff",
-                        "surface-dark": "#162f23",
-                        "text-main": "#1a3c26",
-                        "text-muted": "#4a6b57",
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"]
-                    },
-                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
-                },
-            },
-        }
-    </script>
+<script src="{% static 'js/users/login.js' %}"></script>
 </head>
 <body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col antialiased text-slate-900 dark:text-slate-100">
 {% include 'navbar.html' %}
@@ -110,16 +87,4 @@
 </div>
 </main>
 {% include 'footer.html' %}
-<script>
-    const passwordInput = document.getElementById('password');
-    const togglePasswordButton = document.getElementById('togglePassword');
-    const togglePasswordIcon = document.getElementById('togglePasswordIcon');
-
-    togglePasswordButton.addEventListener('click', () => {
-        const isPassword = passwordInput.type === 'password';
-        passwordInput.type = isPassword ? 'text' : 'password';
-        togglePasswordIcon.textContent = isPassword ? 'visibility_off' : 'visibility';
-        togglePasswordButton.setAttribute('aria-label', isPassword ? 'Ocultar contraseña' : 'Mostrar contraseña');
-    });
-</script>
 </body></html>

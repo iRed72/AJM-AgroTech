@@ -8,47 +8,8 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              "primary": "#4CAF50", // Fresh Green (Verde Lima Suave/Brillante)
-              "primary-dark": "#388E3C",
-              "secondary": "#1B5E20", // Deep Forest Green (Verde Bosque Profundo - replaces Blue)
-              "secondary-dark": "#0D3312",
-              "tech-green": "#2E7D32", // Emerald Green for tech accents
-              "tech-green-dark": "#1B5E20",
-              "background-light": "#f1f8f4", // Very light mint tint
-              "background-dark": "#05110a",
-              "surface-light": "#ffffff",
-              "surface-dark": "#0f2618",
-              "text-main": "#1a3c26", // Dark green-black text
-              "text-muted": "#4a6b57", // Muted sage green
-            },
-            fontFamily: {
-              "display": ["Space Grotesk", "sans-serif"],
-              "body": ["Noto Sans", "sans-serif"],
-            },
-            borderRadius: {
-              "DEFAULT": "0.5rem",
-              "lg": "0.75rem",
-              "xl": "1rem",
-              "full": "9999px"
-            },
-          },
-        },
-      }
-    </script>
-<style>
-        body {
-            font-family: 'Noto Sans', sans-serif;
-        }
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-    </style>
+<link rel="stylesheet" href="{% static 'css/global/index.css' %}"/>
+<script src="{% static 'js/global/index.js' %}"></script>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-text-main dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden">
 {% include 'navbar.html' %}
