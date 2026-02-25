@@ -24,4 +24,5 @@ urlpatterns = [
     path('', lambda request: render(request, 'index.html'), name='index'),
     path('contact/', lambda request: render(request, 'contact.html'), name='contact'),
     path('soluciones/', lambda request: render(request, 'soluciones.html'), name='soluciones'),
+    path('login/', lambda request: render(request, 'users/login.html'), name='login'),
 ]
